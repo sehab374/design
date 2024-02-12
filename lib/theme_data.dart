@@ -9,5 +9,9 @@ class MyThemeData {
           labelMedium: GoogleFonts.poppins(
               fontSize: 20,
               color: MainColors.greyTextColor,
+              fontWeight: FontWeight.w500),
+          labelSmall: GoogleFonts.poppins(
+              fontSize: 16,
+              color: MainColors.greyTextColor,
               fontWeight: FontWeight.w500)));
 }

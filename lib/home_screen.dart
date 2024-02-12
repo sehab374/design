@@ -1,11 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:ui1/category_bottom_sheet.dart';
 import 'package:ui1/colors.dart';
 import 'package:dotted_line/dotted_line.dart';
 
-class HomeScreen extends StatelessWidget {
+class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
 
+  @override
+  State<HomeScreen> createState() => _HomeScreenState();
+}
+
+class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -202,6 +208,25 @@ class HomeScreen extends StatelessWidget {
           ],
         )
       ]),
+      floatingActionButton: FloatingActionButton(
+          onPressed: () {
+            showBottomSheet();
+          },
+          child: Icon(Icons.add)),
+    );
+  }
+
+  showBottomSheet() {
+    showModalBottomSheet(
+      context: context,
+      isScrollControlled: true,
+      shape: OutlineInputBorder(
+          borderSide: BorderSide(color: Colors.transparent),
+          borderRadius: BorderRadius.only(
+              topLeft: Radius.circular(20), topRight: Radius.circular(20))),
+      builder: (context) {
+        return CategoryBottomSheet();
+      },
     );
   }
 }
