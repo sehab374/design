@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ui1/building_details.dart';
 import 'package:ui1/home_screen.dart';
 import 'package:ui1/theme_data.dart';
 
@@ -15,7 +16,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme:  MyThemeData.lightTheme,
-      home: HomeScreen(),
+      home:BuildingDetails()
+      //HomeScreen(),
     );
   }
 }

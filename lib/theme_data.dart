@@ -13,5 +13,9 @@ class MyThemeData {
           labelSmall: GoogleFonts.poppins(
               fontSize: 16,
               color: MainColors.greyTextColor,
-              fontWeight: FontWeight.w500)));
+              fontWeight: FontWeight.w500),
+      labelLarge:  GoogleFonts.poppins(
+          fontSize: 22,
+          color: MainColors.greyTextColor,
+          fontWeight: FontWeight.w500),));
 }
