@@ -81,15 +81,15 @@ class HomeScreen extends StatelessWidget {
                           ],
                         ),
                         Text("Your Policy Has Been Issued ",
-                            style: GoogleFonts.poppins(
-                                fontSize: 20,
-                                color: MainColors.primaryColor,
-                                fontWeight: FontWeight.w500)),
+                            style: Theme.of(context)
+                                .textTheme
+                                .labelMedium!
+                                .copyWith(color: MainColors.primaryColor)),
                         Text("Successfully",
-                            style: GoogleFonts.poppins(
-                                fontSize: 20,
-                                color: MainColors.primaryColor,
-                                fontWeight: FontWeight.w500)),
+                            style: Theme.of(context)
+                                .textTheme
+                                .labelMedium!
+                                .copyWith(color: MainColors.primaryColor)),
                       ],
                     ),
                     Padding(
@@ -103,10 +103,7 @@ class HomeScreen extends StatelessWidget {
                     Text(
                         textAlign: TextAlign.center,
                         "Medical Malpractice Policy That Issued With 5000 SAR Will Be Shared With You Through Email & Sms, And Expiry Date Will Be At 23Th June 2025, And Valid For 3 Years.",
-                        style: GoogleFonts.poppins(
-                            fontSize: 20,
-                            color: MainColors.greyTextColor,
-                            fontWeight: FontWeight.w500)),
+                        style: Theme.of(context).textTheme.labelMedium),
                     Padding(
                       padding:
                           const EdgeInsetsDirectional.symmetric(vertical: 20),
@@ -131,7 +128,7 @@ class HomeScreen extends StatelessWidget {
                                   Text("Receipt Number",
                                       style: GoogleFonts.poppins(
                                           fontSize: 16,
-                                          color: MainColors.greyTextColor,
+                                          color: MainColors.primaryColor,
                                           fontWeight: FontWeight.w500)),
                                   Text("65896226975",
                                       style: GoogleFonts.poppins(
